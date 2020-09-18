@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1, h2, h3{
+  font-family: 'Fredoka One', cursive;
+}
+p{
+  font-size: 12px;
+  margin: 5px;
+  text-align: justify;
+  left: -10px ;
+}
+.animation{
+    background-color: #79a7d3;
+    overflow: hidden;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 500px;
+    
+    
+
+}
+.einn{
+    position: relative;
+    left: 300px;
+    bottom: 100px;
+    animation-name: les;
+    animation-duration: 7s;
+    animation-timing-function: ease-in, ease-in-out;
+
+}
+@keyframes les {
+
+  from {
+    top: -50px;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    top: 50px;
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    top: -75px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    top: -200px;
+    
+  }
+
+}
+.tveir{
+  position: relative;
+  right: 400px;
+  animation-name: len;
+  animation-delay: 5.5s;
+  animation-duration: 7s;
+  animation-timing-function: ease-in, ease-in-out;
+
+}
+@keyframes len {
+
+  from {
+    right: 300px;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    right: -50px;
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    right: -50px;
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    right: -200px;
+    animation-timing-function: ease-in;
+  }
+  85% {
+    right: -200px;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    right: -700px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    right: -700px;
+  }
+
+}
+
+
+.fyrst{
+    position: relative;
+    left: -500px;
+    animation-name: boks;
+    animation-duration: 7s;
+    animation-timing-function: ease-in, ease-in-out;
+    
+}
+@keyframes boks {
+
+  from {
+    left: 400px;
+    animation-timing-function: ease-out;
+  }
+
+  25% {
+    left: 10px;
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    left: 10px;
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    left: 10px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    left: -400px;
+  }
+
+}
+@keyframes boks {
+
+    from {
+      left: 400px;
+      animation-timing-function: ease-out;
+    }
+  
+    25% {
+      left: 10px;
+      animation-timing-function: ease-in;
+    }
+  
+    50% {
+      left: 10px;
+      animation-timing-function: ease-out;
+    }
+  
+    75% {
+      left: 10px;
+      animation-timing-function: ease-in;
+    }
+  
+    to {
+      left: -400px;
+    }
+  
+  }
+
+.annar{
+    position: relative;
+    left: 500px;
+    animation-name: vinna;
+    animation-delay: 9s;
+    animation-duration: 7s;
+    animation-timing-function: step-start;
+}
+
+@keyframes vinna {
+
+    from {
+      left: 300px;
+      animation-timing-function: ease-out;
+    }
+  
+    25% {
+      left: 10px;
+      animation-timing-function: ease-in;
+    }
+  
+    50% {
+      left: 10px;
+      animation-timing-function: ease-out;
+    }
+  
+    75% {
+      left: 10px;
+      animation-timing-function: ease-in;
+    }
+  
+    to {
+      left: 370px;
+    }
+  
+  }
+    
+.triman{
+  position: relative;
+  bottom: -50px;
+  left: -180px;
+  animation: man; 
+  animation-delay: 8s;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes man {
+
+  from {
+    bottom: -50px;
+    animation-timing-function: ease-out;
+  }
+
+  12% {
+    bottom: 300px;
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    bottom: 300px;
+    animation-timing-function: ease-out;
+  }
+
+  90% {
+    bottom: 300px;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    bottom: -70px;
+  }
+
+}
+
+.thrir{
+  position: relative;
+  left: 200px;
+  animation-name: trib;
+  animation-duration: 12s;
+  animation-timing-function: ease-in, ease-in-out;
+  opacity: 0%;
+
+}
+@keyframes trib {
+  
+ 0% { opacity:0; }
+ 70% { opacity:0; }
+ 95% { opacity:1}
+ 100% { opacity:0; }
+
+
+}
+
+
+
