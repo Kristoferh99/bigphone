@@ -4,13 +4,14 @@
     
 }
 body{
-    display: flex;
-    justify-content: center;
+  display: grid;
+  justify-content: center;
+    
     
 }
 
-h1, h2, h3{
-  font-family: 'Fredoka One', cursive;
+h1, h2, h3, h4{
+  font-family: 'Cuprum', sans-serif;
 }
 p{
   font-size: 12px;
@@ -21,7 +22,7 @@ p{
 .animation{
     background-color: #79a7d3;
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: 15px;
     max-width: 650px;
     max-height: 500px;
     
@@ -114,7 +115,8 @@ p{
 
 .fyrst{
     position: relative;
-    left: -500px;
+    left: -450px;
+    bottom: 55px;
     animation-name: boks;
     animation-duration: 7s;
     animation-timing-function: ease-in, ease-in-out;
@@ -178,36 +180,59 @@ p{
 .annar{
     position: relative;
     left: 500px;
+    bottom: 50px;
     animation-name: vinna;
-    animation-delay: 9s;
-    animation-duration: 7s;
+    animation-delay: 8s;
+    animation-duration: 10s;
     animation-timing-function: step-start;
 }
 
 @keyframes vinna {
-
     from {
       left: 300px;
       animation-timing-function: ease-out;
+      transform: scale(1);
+      
     }
   
-    25% {
+    23% {
       left: 10px;
       animation-timing-function: ease-in;
+      transform: scale(1);
+      
     }
   
-    50% {
+    30% {
       left: 10px;
       animation-timing-function: ease-out;
+      transform: scale(1); 
+      
     }
-  
+
+    33% {
+      left: 10px;
+      animation-timing-function: ease-out;
+      
+      transform: scale(1.12);
+    }
+
+    36% {
+      left: 10px;
+      animation-timing-function: ease-out;
+      
+      transform: scale(1.1);
+    }
+
     75% {
       left: 10px;
       animation-timing-function: ease-in;
+      
+      transform: scale(1.1);
     }
   
     to {
       left: 370px;
+      transform: scale(1.1);
     }
   
   }
@@ -217,8 +242,8 @@ p{
   bottom: -50px;
   left: -180px;
   animation: man; 
-  animation-delay: 8s;
-  animation-duration: 9s;
+  animation-delay: 6.5s;
+  animation-duration: 8s;
   animation-timing-function: ease-in-out;
 }
 
@@ -230,17 +255,17 @@ p{
   }
 
   12% {
-    bottom: 300px;
+    bottom: 315px;
     animation-timing-function: ease-in;
   }
 
   50% {
-    bottom: 300px;
+    bottom: 315px;
     animation-timing-function: ease-out;
   }
 
   90% {
-    bottom: 300px;
+    bottom: 315px;
     animation-timing-function: ease-in;
   }
 
@@ -254,7 +279,7 @@ p{
   position: relative;
   left: 200px;
   animation-name: trib;
-  animation-duration: 12s;
+  animation-duration: 13s;
   animation-timing-function: ease-in, ease-in-out;
   opacity: 0%;
 
@@ -262,12 +287,67 @@ p{
 @keyframes trib {
   
  0% { opacity:0; }
- 70% { opacity:0; }
- 95% { opacity:1}
+ 80% { opacity:0; }
+ 95% { opacity:1; }
  100% { opacity:0; }
 
 
 }
 
+.four{
+  position: relative;
+  left: 220px;
+  bottom: 10px;
+  animation-name: fjor;
+  animation-delay: 8s;
+  animation-duration: 8s;
+  animation-timing-function: ease-in, ease-in-out;
+  opacity: 0%;
+}
+
+@keyframes fjor{
+  0% { opacity:0;
+   color: black; }
+ 50% { opacity:0; 
+   color: black; }
+ 75% { opacity:1;
+   color: #fff; }
+ 100% { opacity:1; 
+   color: #fff; }
+
+}
+.stori{
+  animation: ease-in-out;
+  animation-name: ipad;
+  animation-delay: 8s;
+  animation-duration: 10s;
+  
+}
+
+@keyframes ipad {
+ 0% { fill: #fff;}
+ 53% { fill: #fff;}
+ 57% { fill: black;}
+ 100% { fill: black;}
+
+  
+}
+
+.litli{
+  animation: ease-in-out;
+  animation-name: iphone;
+  animation-delay: 8s;
+  animation-duration: 10s;
+  
+}
+
+@keyframes iphone {
+ 0% { fill: #fff;}
+ 53% { fill: #fff;}
+ 57% { fill: black;}
+ 100% { fill: black;}
+
+  
+}
 
 
